@@ -1,13 +1,14 @@
 body {
   font-family: sans-serif;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .file-upload {
-  background-color: #ffffff;
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+    padding: 15% 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
 }
 
 .file-upload-btn {
@@ -54,15 +55,19 @@ body {
 }
 
 .image-upload-wrap {
-  margin-top: 20px;
-  border: 4px dashed #1FB264;
-  position: relative;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px #35465d;
+    background-color: #ffffff;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: #1FB264;
-  border: 4px dashed #ffffff;
+    background-color: #35465d82;
+    border: 1.5px dashed #ffffff;
 }
 
 .image-title-wrap {
@@ -75,10 +80,8 @@ body {
 }
 
 .drag-text h3 {
-  font-weight: 100;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #15824B;
-  padding: 60px 0;
 }
 
 .file-upload-image {
@@ -114,3 +117,120 @@ body {
   border: 0;
   transition: all .2s ease;
 }
+
+.nav-distance {
+    padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+  font-family: NanumSquareR;
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d; 
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.title {
+  font-family: NanumSquareR;
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle {
+  font-family: NanumSquareR;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+
+.youtube-link {
+    font-family: NanumSquareR;
+    font-size: 1.5rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-link:hover {
+    font-family: NanumSquareR;
+    font-size: 1.5rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-icon {
+    width: 8%;
+}
+
+.upload {
+    width: 20%;
+}
+
+.upload-text {
+    width: 58%;
+    font-family: NanumSquareR;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
