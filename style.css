@@ -469,3 +469,7 @@ input:checked + label > .knob > i:before {
   left: 0px;
   transform: rotate(134deg);
 }
+
+.ad-banner {
+    max-width: 320px;
+}
