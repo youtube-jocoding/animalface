@@ -121,6 +121,12 @@
  data-ad-height  = "100"></ins>
     </div>
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <ins id="googleAd" class="adsbygoogle"
+     style="display:none"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gc+4f+2v-a1+80"
+     data-ad-client="ca-pub-2962790403778987"
+     data-ad-slot="1958735037"></ins>
     <div class="container pt-3">
         <div id="disqus_thread"></div>
     </div>
@@ -327,6 +333,16 @@
                 var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
                 labelContainer.childNodes[i].innerHTML = label + bar;
             }
+        }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf("iphone") != -1 || agent.indexOf("android") != -1 || agent.indexOf("mobile") != -1) {
+            document.getElementById("googleAd").style.display = 'none';
+        } else {
+            document.getElementById("googleAd").style.display = 'block';
+            (adsbygoogle = window.adsbygoogle || []).push({});
         }
     </script>
 </body>
