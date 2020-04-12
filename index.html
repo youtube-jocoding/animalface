@@ -101,7 +101,7 @@
             </div>
             <p class="result-message"></p>
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-            <div class="addthis_inline_share_toolbox_6lz1"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
 
             <div class="pt-3 image-title-wrap">
                 <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
@@ -110,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div id="coupang" class="container d-flex justify-content-center">
         <script src="https://ads-partners.coupang.com/g.js"></script>
         <script>
             new PartnersCoupang.G({
@@ -189,11 +189,11 @@
     </script>
     <script>
         (function() {
-            var d = document,
-                s = d.createElement('script');
-            s.src = 'https://jocoding.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://jocoding.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
         })();
     </script>
     <noscript>Please enable JavaScript to view the
@@ -393,6 +393,20 @@
                 var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
                 var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
                 labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+    <script>
+        function iosApp() {
+            document.getElementById("coupang").style.display="none";
+            $("#coupang ins").hide();
+            document.getElementById("addThis").style.display="none";
+            document.getElementById("disqus_thread").style.display="none";
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+              if(kakao[i]) {
+                  kakao[i].style.display="none";
+              }
             }
         }
     </script>
